@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from bs4 import BeautifulSoup as bs
+import BeautifulSoup as bs
 import requests
 import streamlit as sl
 
