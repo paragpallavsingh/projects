@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import bs4
-import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 import requests
 import streamlit as sl
 
