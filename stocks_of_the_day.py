@@ -18,6 +18,7 @@ for link in stocks_soup.find_all('a'):
         hot_stocks_url = link.get('href')
         parent = link.parent.parent
         date = parent.span.get_text()
+        break
 
 url_page_response = requests.get(hot_stocks_url)
 url_soup = bs(url_page_response.content,"html.parser") #star section
