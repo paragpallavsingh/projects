@@ -22,10 +22,10 @@ df_full_lst = pd.DataFrame(full_lst)
 
 #Streamlit start design
 st.set_page_config(page_title="List of IP")
-st.title("***Word Counter***", anchor=None)
+st.title("***Full List of IP ranges for Googlebot***", anchor=None)
 
 st.table(df_full_lst)
-csv = df_full_lst.to_csv()
+st.write('For more info, check this [post](https://www.linkedin.com/posts/activity-6888066374522949632-iGS6/) by Mirko Obkircher')
 b64 = base64.b64encode(csv.encode()).decode()
 st.markdown('### **⬇️ Download output CSV File **')
 href = f"""<a href="data:file/csv;base64,{b64}">Download CSV File</a> (Right-click and save as "filename.csv". Don't left-click)"""
