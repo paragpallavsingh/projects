@@ -26,6 +26,7 @@ st.title("***Full List of IP ranges for Googlebot***", anchor=None)
 
 st.table(df_full_lst)
 st.write('For more info, check this [post](https://www.linkedin.com/posts/activity-6888066374522949632-iGS6/) by Mirko Obkircher')
+csv = df_full_lst.to_csv()
 b64 = base64.b64encode(csv.encode()).decode()
 st.markdown('### **⬇️ Download output CSV File **')
 href = f"""<a href="data:file/csv;base64,{b64}">Download CSV File</a> (Right-click and save as "filename.csv". Don't left-click)"""
