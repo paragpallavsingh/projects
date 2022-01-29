@@ -1,6 +1,6 @@
 from cgitb import text
 from operator import le
-from classes import Page
+# from classes import Page
 import base64
 import pandas as pd
 import requests
