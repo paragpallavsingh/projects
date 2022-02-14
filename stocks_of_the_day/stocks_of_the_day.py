@@ -37,7 +37,6 @@ for heading in url_soup.find_all('strong'):
         split = text.split("|")
         stocks_list.append(split)
 
-
 stocks_df = pd.DataFrame(stocks_list)
 headers = ["Stock-Name","LTP","Stop-Loss","Target","Return"]
 stocks_df.columns = headers
